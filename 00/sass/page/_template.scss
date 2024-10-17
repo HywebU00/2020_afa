@@ -689,6 +689,34 @@ text.highcharts-credits { display: none; }
     line-height: 1.25em;
   }
 }
+._flex{
+    display: flex;
+    justify-content: space-between;
+    .form_grid {
+        width: 50%;
+        border-top: none;
+        .form_grp{
+            border-bottom: none;
+        }
+    }
+    .flex-form .form_title {
+        align-self: center;
+        // max-width: fit-content;
+        // flex: 1 1 auto;
+    }
+    @include screen('tablet') {
+        flex-direction: column-reverse;
+        .flex-form{
+            margin: 0 0 .5em;
+        }
+        .form_grid {
+            width: 100%;
+        }
+        .countdown{
+            padding-bottom: 0;
+        }
+    }
+}
 
 // 產銷貼紙
 .sticker-info{

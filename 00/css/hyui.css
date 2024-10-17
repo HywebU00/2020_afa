@@ -9366,6 +9366,35 @@ text.highcharts-credits {
   line-height: 1.25em;
 }
 
+._flex {
+  display: flex;
+  justify-content: space-between;
+}
+._flex .form_grid {
+  width: 50%;
+  border-top: none;
+}
+._flex .form_grid .form_grp {
+  border-bottom: none;
+}
+._flex .flex-form .form_title {
+  align-self: center;
+}
+@media screen and (max-width: 991px) {
+  ._flex {
+    flex-direction: column-reverse;
+  }
+  ._flex .flex-form {
+    margin: 0 0 0.5em;
+  }
+  ._flex .form_grid {
+    width: 100%;
+  }
+  ._flex .countdown {
+    padding-bottom: 0;
+  }
+}
+
 .sticker-info {
   display: flex;
   flex-flow: row nowrap;
