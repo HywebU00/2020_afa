@@ -9371,7 +9371,6 @@ text.highcharts-credits {
   justify-content: space-between;
 }
 ._flex .form_grid {
-  width: 50%;
   border-top: none;
 }
 ._flex .form_grid .form_grp {
@@ -9379,6 +9378,15 @@ text.highcharts-credits {
 }
 ._flex .flex-form .form_title {
   align-self: center;
+}
+._flex .flex-form .form_content {
+  flex-wrap: nowrap;
+}
+._flex .flex-form .form_content > input {
+  min-width: 320px;
+}
+._flex .flex-form .btn {
+  flex: 0 0 auto;
 }
 @media screen and (max-width: 991px) {
   ._flex {

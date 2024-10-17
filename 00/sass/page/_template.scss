@@ -693,16 +693,27 @@ text.highcharts-credits { display: none; }
     display: flex;
     justify-content: space-between;
     .form_grid {
-        width: 50%;
+        // width: -webkit-fill-available
         border-top: none;
         .form_grp{
             border-bottom: none;
         }
     }
-    .flex-form .form_title {
-        align-self: center;
-        // max-width: fit-content;
-        // flex: 1 1 auto;
+    .flex-form {
+        .form_title {
+            align-self: center;
+            // max-width: fit-content;
+            // flex: 1 1 auto;
+        }
+        .form_content{
+            flex-wrap: nowrap;
+            > input{
+                min-width: 320px;
+            }
+        }
+        .btn{
+            flex: 0 0 auto;
+        }
     }
     @include screen('tablet') {
         flex-direction: column-reverse;
